@@ -109,8 +109,5 @@ class UserController extends Controller
         ];
     }
 
-    //for testing purpose
-    function test(){
-        echo 'ok';
-    }
+    
 }
