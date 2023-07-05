@@ -24,6 +24,8 @@ Route::post('register', [UserController::class, 'register']);
 //user Login
 Route::post('login', [UserController::class, 'login']);
 
+//demo route
+Route::get('test', [UserController::class, 'test']);
 //user authentication
 Route::group(['middleware' => ['auth:sanctum']], function () {
 

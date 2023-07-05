@@ -108,4 +108,9 @@ class UserController extends Controller
             'message' => 'logged Out'
         ];
     }
+
+    //for testing purpose
+    function test(){
+        echo 'ok';
+    }
 }
