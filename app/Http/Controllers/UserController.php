@@ -12,11 +12,10 @@ class UserController extends Controller
     // For Get All Data
     public function getData()
     {
-        // $response = [
-        //     'all users' =>  User::all()
-        // ];
-        // return User::all();
-        return 'hello';
+        $response = [
+            'all users' =>  User::all()
+        ];
+        return $response;
     }
     // For showing registration Form
     public function register(Request $req)
