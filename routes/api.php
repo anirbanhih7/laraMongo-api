@@ -23,7 +23,7 @@ Route::post('register', [UserController::class, 'register']);
 
 //user Login
 Route::post('login', [UserController::class, 'login']);
-Route::get('getUser/{id}', [UserController::class, 'getUser']);
+
 //user authentication
 Route::group(['middleware' => ['auth:sanctum']], function () {
 
