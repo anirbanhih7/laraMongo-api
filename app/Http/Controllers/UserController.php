@@ -15,7 +15,8 @@ class UserController extends Controller
         // $response = [
         //     'all users' =>  User::all()
         // ];
-        return User::all();
+        // return User::all();
+        return 'hello';
     }
     // For showing registration Form
     public function register(Request $req)
