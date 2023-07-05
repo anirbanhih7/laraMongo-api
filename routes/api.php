@@ -23,12 +23,12 @@ Route::post('register', [UserController::class, 'register']);
 
 //user Login
 Route::post('login', [UserController::class, 'login']);
-Route::get('getUser/{id}', [UserController::class, 'getUser']);
+
 //user authentication
 Route::group(['middleware' => ['auth:sanctum']], function () {
 
     //get single data
-    // Route::get('getUser/{id}', [UserController::class, 'getUser']);
+    Route::get('getUser/{id}', [UserController::class, 'getUser']);
 
     //update user
     Route::put('update/{id}', [UserController::class, 'updateUser']);
